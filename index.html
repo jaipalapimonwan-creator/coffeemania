@@ -1441,7 +1441,7 @@
                          appState.liveOrders.splice(orderIndex, 1);
                          
                          // Simulate announcement using browser TTS as fallback is the only way here
-                         const userQuery = `ประกาศเรียกคิวหมายเลข ${queueNumber} สามารถรับเครื่องดื่มของท่านที่บาร์น้ำได้เลยค่ะ`;
+                         const userQuery = `ประกาศเรียกคิวหมายเลข ${queueNumber} สามารถรับเครื่องดื่มของท่านที่บาร์น้ำครับ`;
                          const synth = window.speechSynthesis;
                          const utterance = new SpeechSynthesisUtterance(userQuery);
                          utterance.lang = 'th-TH';
@@ -1535,7 +1535,7 @@
                  return;
             } 
             
-            const userQuery = `ประกาศเรียกคิวหมายเลข ${queueNum} สามารถรับเครื่องดื่มของท่านที่บาร์น้ำค่ะ`;
+            const userQuery = `ประกาศเรียกคิวหมายเลข ${queueNum} สามารถรับเครื่องดื่มของท่านที่บาร์น้ำครับ`;
             
             const payload = {
                 contents: [{ parts: [{ text: userQuery }] }],
@@ -1892,4 +1892,5 @@
     </script>
 </body>
 </html>
+
 
