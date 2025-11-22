@@ -1535,15 +1535,15 @@
                  return;
             } 
             
-            const userQuery = `ประกาศเรียกคิวหมายเลข ${queueNum} สามารถรับเครื่องดื่มของท่านที่บาร์น้ำได้เลยค่ะ`;
+            const userQuery = `ประกาศเรียกคิวหมายเลข ${queueNum} สามารถรับเครื่องดื่มของท่านที่บาร์น้ำค่ะ`;
             
             const payload = {
                 contents: [{ parts: [{ text: userQuery }] }],
                 generationConfig: {
                     responseModalities: ["AUDIO"],
                     speechConfig: {
-                        // FIX: ใช้เสียงผู้หญิง Zephyr (Bright)
-                        voiceConfig: { prebuiltVoiceConfig: { voiceName: "Zephyr" } }
+                        // FIX: ใช้เสียงผู้หญิง Kore (Bright)
+                        voiceConfig: { prebuiltVoiceConfig: { voiceName: "Kore" } }
                     }
                 },
                 model: "gemini-2.5-flash-preview-tts"
@@ -1892,3 +1892,4 @@
     </script>
 </body>
 </html>
+
